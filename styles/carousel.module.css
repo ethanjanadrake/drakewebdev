@@ -1,0 +1,22 @@
+.prev {
+	transform: translateY(-100%);
+}
+.next {
+	transform: translateY(100%);
+}
+.current {
+	transform: translateY(0);
+}
+
+.prev .carouselChild {
+	width: 50%;
+	height: 50%;
+}
+.next .carouselChild {
+	width: 50%;
+	height: 50%;
+}
+.current .carouselChild {
+	width: 70%;
+	height: 70%;
+}
