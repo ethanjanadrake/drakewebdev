@@ -3,7 +3,7 @@ import Socials from "./Socials";
 
 export default function AboutMe() {
 	return (
-		<div className='mt-10 grid grid-cols-2 font-roboto text-justify'>
+		<section className='mt-10 grid grid-cols-2 font-roboto text-justify'>
 			<div className='px-20'>
 				<h1 className='flex items-center text-4xl text-secondary font-bold mb-5'>
 					<div className='h-px w-full bg-primary mx-5' />
@@ -55,6 +55,6 @@ export default function AboutMe() {
 				<Socials />
 			</div>
 			<img src='/images/me.jpg' />
-		</div>
+		</section>
 	);
 }

@@ -60,7 +60,7 @@ export default function Skills() {
 		},
 	];
 	return (
-		<div className='mt-10'>
+		<section className='mt-10'>
 			<h1 className='text-4xl text-center flex items-center font-bold text-secondary'>
 				<div className='h-px w-full mx-10 bg-primary' />
 				<p>Skills</p>
@@ -74,11 +74,11 @@ export default function Skills() {
 							height={skill.h}
 							width={skill.w}
 							alt={skill.alt}
-							id={skill.alt}
+							key={skill.alt}
 						/>
 					);
 				})}
 			</div>
-		</div>
+		</section>
 	);
 }

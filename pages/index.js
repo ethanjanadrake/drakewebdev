@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<div className='relative bg-fixed bg-gradient-to-br from-purple-300 to-green-200 min-h-screen py-16'>
 			<Head>
-				<title>Ethan Drake</title>
+				<title>Drake Web Dev</title>
 				<link
 					rel='apple-touch-icon'
 					sizes='180x180'
@@ -36,7 +36,7 @@ export default function Home() {
 					rel='stylesheet'
 				/>
 				<meta charset='UTF-8' />
-				<meta property='og:title' content='Ethan Jana Drake Web Development' />
+				<meta property='og:title' content='Drake Web Dev' />
 				<meta
 					property='og:description'
 					content='Freelance Web Developer looking for work.'

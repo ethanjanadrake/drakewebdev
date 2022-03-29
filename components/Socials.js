@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Socials() {
 	return (
-		<div className='flex items-center justify-center h-12 text-primary text-4xl mt-10'>
+		<section className='flex items-center justify-center h-12 text-primary text-4xl mt-10'>
 			<a
 				href='https://github.com/ethanjanadrake'
 				className='transition-all hover:text-secondary p-1'
@@ -16,6 +16,6 @@ export default function Socials() {
 			>
 				<FaLinkedin />
 			</a>
-		</div>
+		</section>
 	);
 }
