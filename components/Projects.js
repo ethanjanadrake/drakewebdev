@@ -10,12 +10,12 @@ const ProjectButton = ({
 	href,
 }) => {
 	return (
-		<div className='relative m-2 w-64 h-10'>
+		<div className='relative flex lg:block px-8 my-2 lg:px-0 lg:m-2 w-full lg:w-64 lg:h-10'>
 			<button
-				className={`absolute z-10 transition-all duration-300 text-gray-ll border-2 w-64 p-3 rounded-lg font-bold ${
+				className={`lg:absolute z-10 transition-all duration-300 text-gray-ll border-2 w-full lg:w-64 lg:p-3 rounded-l-lg lg:rounded-lg font-bold border-gray-dd ${
 					project === currentProject
-						? "bg-primary-d border-secondary hover:border-secondary hover:bg-primary-d cursor-default"
-						: "bg-secondary border-primary-d hover:border-tertiary hover:bg-secondary-ll"
+						? "bg-primary-d cursor-default"
+						: "bg-secondary hover:bg-secondary-ll"
 				}`}
 				onClick={() => {
 					setProject(project);
@@ -26,11 +26,15 @@ const ProjectButton = ({
 			<a
 				href={href}
 				target='_blank'
-				className={`absolute z-0 font-bold transition-position duration-500 text-primary left-1/2 -translate-x-1/2 bg-quaternary-ll p-2 pb-1 rounded-t-lg border-2 border-b-0 border-primary hover:bg-quaternary hover:text-primary-d ${
+				className={`lg:absolute z-0 font-bold transition-position duration-500 lg:left-1/2 lg:-translate-x-1/2 p-1 lg:p-2 lg:pb-1 rounded-r-lg lg:rounded-t-lg lg:rounded-b-none border-2 border-l-0 lg:border-l-2 lg:border-b-0 border-gray-dd w-44 text-center -ml-1 lg:ml-0 ${
 					project === currentProject && href ? "bottom-full " : "bottom-0"
+				} ${
+					href
+						? "text-primary bg-quaternary-ll hover:bg-quaternary hover:text-primary-d"
+						: "text-white bg-gray-l border-gray"
 				}`}
 			>
-				Visit Now
+				{href ? "Visit Now" : "Not Public"}
 			</a>
 		</div>
 	);
@@ -40,12 +44,12 @@ export default function Projects() {
 	const [project, setProject] = useState("1");
 	return (
 		<section className='bg-gray-ll pt-10'>
-			<h1 className='flex items-center text-4xl font-roboto font-bold text-secondary text-center mb-10'>
+			<h1 className='flex items-center text-md lg:text-4xl font-roboto font-bold text-secondary text-center mb-5 lg:mb-10'>
 				<div className='h-px w-full bg-primary mx-10' />
 				<p>Projects</p>
 				<div className='h-px w-full bg-primary mx-10' />
 			</h1>
-			<div className='flex items-center justify-center'>
+			<div className='flex flex-col lg:flex-row items-center justify-center'>
 				<ProjectButton
 					project='1'
 					currentProject={project}
@@ -70,7 +74,7 @@ export default function Projects() {
 					MMO Character Viewer
 				</ProjectButton>
 			</div>
-			<div className='h-48 px-12 text-justify mt-5'>
+			<div className='h-80 mb-40 lg:mb-0 lg:h-32 px-12 text-sm text-justify mt-5'>
 				{project === "1" && (
 					<p>
 						Zandart is an E-Commerce site for an individual that sells drip

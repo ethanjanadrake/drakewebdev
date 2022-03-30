@@ -3,15 +3,19 @@ import Socials from "./Socials";
 
 export default function AboutMe() {
 	return (
-		<section className='mt-10 grid grid-cols-2 font-roboto text-justify'>
-			<div className='px-20'>
-				<h1 className='flex items-center text-4xl text-secondary font-bold mb-5'>
+		<section className='mt-10 lg:grid grid-cols-2 font-roboto text-justify'>
+			<div className='px-12 lg:px-20'>
+				<h1 className='flex items-center text-md lg:text-4xl text-secondary font-bold mb-5'>
 					<div className='h-px w-full bg-primary mx-5' />
 					<p className='mr-3'>About</p>
 					<p>Me</p>
 					<div className='h-px w-full bg-primary mx-5' />
 				</h1>
 				<div className='text-sm'>
+					<img
+						src='/images/socialimage.jpg'
+						className='float-right w-2/3 pl-5 pb-5 lg:hidden'
+					/>
 					<p>
 						I am a former high school science teacher who decided to explore Web
 						Development in 2020. I was raised in the Greater Philadelphia area
@@ -57,7 +61,10 @@ export default function AboutMe() {
 				</div>
 				<Socials />
 			</div>
-			<img src='/images/socialimage.jpg' className='pr-20 pt-5' />
+			<img
+				src='/images/socialimage.jpg'
+				className='hidden lg:block pr-20 pt-5'
+			/>
 		</section>
 	);
 }

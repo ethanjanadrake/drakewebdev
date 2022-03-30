@@ -3,11 +3,11 @@ import React from "react";
 export default function Skills() {
 	const skills = [
 		{ alt: "html logo", src: "/images/htmlLogo.png", w: "100px", h: "100px" },
-		{ alt: "css logo", src: "/images/cssLogo.png", w: "75px", h: "100px" },
+		{ alt: "css logo", src: "/images/cssLogo.png", w: "70px", h: "100px" },
 		{
 			alt: "javascript logo",
 			src: "/images/javascriptLogo.png",
-			w: "100px",
+			w: "90px",
 			h: "100px",
 		},
 		{
@@ -61,12 +61,12 @@ export default function Skills() {
 	];
 	return (
 		<section className='mt-10'>
-			<h1 className='text-4xl text-center flex items-center font-bold text-secondary'>
+			<h1 className='text-md lg:text-4xl text-center flex items-center font-bold text-secondary'>
 				<div className='h-px w-full mx-10 bg-primary' />
 				<p>Skills</p>
 				<div className='h-px w-full mx-10 bg-primary' />
 			</h1>
-			<div className='mt-10 grid grid-cols-5 place-items-center'>
+			<div className='mt-10 grid grid-cols-3 gap-10 w-3/4 mx-auto lg:grid-cols-5 place-items-center'>
 				{skills.map(skill => {
 					return (
 						<img
@@ -75,6 +75,9 @@ export default function Skills() {
 							width={skill.w}
 							alt={skill.alt}
 							key={skill.alt}
+							className={`last:col-start-2 lg:last:col-start-auto ${
+								skill.alt === "css logo" && "w-3/4 lg:w-1/2"
+							}`}
 						/>
 					);
 				})}

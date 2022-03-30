@@ -8,7 +8,7 @@ import Skills from "/components/Skills";
 
 export default function Home() {
 	return (
-		<div className='relative bg-fixed bg-gradient-to-br from-purple-500 to-pink-200 min-h-screen py-16'>
+		<div className='relative bg-fixed bg-gradient-to-br from-purple-500 to-pink-200 min-h-screen lg:py-16'>
 			<Head>
 				<title>Drake Web Dev</title>
 				<link
@@ -48,12 +48,12 @@ export default function Home() {
 				<meta name='author' content='Ethan Jana Drake' />
 				<meta property='og:image' content='/images/socialimage.jpg' />
 			</Head>
-			<main className='max-w-7xl mx-auto bg-white pt-10'>
-				<h1 className='flex justify-center text-9xl font-extrabold font-roboto text-primary-d'>
+			<main className='lg:max-w-7xl lg:mx-auto bg-white pt-10'>
+				<h1 className='flex justify-center text-4xl xl:text-9xl font-extrabold font-roboto text-primary-d'>
 					<p className='mr-2'>Ethan Jana Drake</p>
 					<GiSpikedDragonHead />
 				</h1>
-				<h2 className='text-3xl font-bold text-secondary-l text-right mt-5 mr-32'>
+				<h2 className='text-xl lg:text-3xl font-bold text-secondary-l text-right mt-2 lg:mt-5 mr-10 lg:mr-32'>
 					Web Development
 				</h2>
 				<AboutMe />
