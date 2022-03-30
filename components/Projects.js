@@ -70,7 +70,7 @@ export default function Projects() {
 					MMO Character Viewer
 				</ProjectButton>
 			</div>
-			<div className='h-48 p-5 text-justify'>
+			<div className='h-48 px-12 text-justify mt-5'>
 				{project === "1" && (
 					<p>
 						Zandart is an E-Commerce site for an individual that sells drip

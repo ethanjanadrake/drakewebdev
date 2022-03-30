@@ -8,7 +8,7 @@ import Skills from "/components/Skills";
 
 export default function Home() {
 	return (
-		<div className='relative bg-fixed bg-gradient-to-br from-purple-300 to-green-200 min-h-screen py-16'>
+		<div className='relative bg-fixed bg-gradient-to-br from-purple-500 to-pink-200 min-h-screen py-16'>
 			<Head>
 				<title>Drake Web Dev</title>
 				<link
