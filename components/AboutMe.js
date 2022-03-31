@@ -25,7 +25,7 @@ export default function AboutMe() {
 						the San Francisco Bay Area in 2016 and taught Physics, Chemistry,
 						Programming, and Engineering classes in two schools.
 					</p>
-					<p className='mt-5'>
+					{/* <p className='mt-5'>
 						Living in the Bay Area led me to immerse myself in the Silicon
 						Valley culture, and as I saw most of my friends working in tech, I
 						started to realize that there was nothing special about them that I
@@ -37,7 +37,7 @@ export default function AboutMe() {
 						through. After my primary learning stage, I managed to discover some
 						freelancing opportunities which are outlined in the Projects section
 						of this page.
-					</p>
+					</p> */}
 					<p className='mt-5'>
 						I have always been close to tech. My lifelong hobby of video gaming
 						connected me to modding games and at times I even coded my own mods,
@@ -50,12 +50,12 @@ export default function AboutMe() {
 						a small video game.
 					</p>
 					<p className='mt-5'>
-						Currently, I am continuing to build my portfolio up as I search for
+						Currently, I am continuing to build my portfolio as I search for
 						more permanent opportunities as a Junior Developer so I can thrive
 						in my newfound passion. While my experience is largely frontend, I
 						have been dabbling in backend systems, mostly using Google Firebase
 						for my needs. I am confident in my ability to learn anything on the
-						go, and if you are interested in my skills, please don't hesitate to
+						go. If you are interested in my skills, please don't hesitate to
 						contact me.
 					</p>
 				</div>
@@ -63,7 +63,7 @@ export default function AboutMe() {
 			</div>
 			<img
 				src='/images/socialimage.jpg'
-				className='hidden lg:block pr-20 pt-5'
+				className='hidden lg:block pr-20 pt-5 mb-10'
 			/>
 		</section>
 	);
