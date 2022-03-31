@@ -12,9 +12,9 @@ const ProjectButton = ({
 	href,
 }) => {
 	return (
-		<div className='relative flex lg:block px-8 my-2 lg:px-0 lg:m-2 w-full lg:w-64 lg:h-10'>
+		<div className='relative flex sm:block px-8 my-2 sm:px-0 sm:m-2 w-full sm:w-40 lg:w-64 sm:h-6 lg:h-10'>
 			<button
-				className={`lg:absolute z-10 transition-all duration-300 text-gray-ll border-2 w-3/4 mx-auto p-1 lg:w-64 lg:p-3 rounded-lg font-bold border-gray-dd ${
+				className={`sm:absolute z-10 transition-all duration-300 text-gray-ll border-2 w-3/4 mx-auto p-1 sm:w-40 sm:text-xs lg:text-lg lg:w-64 sm:p-3 rounded-lg font-bold border-gray-dd ${
 					project === currentProject
 						? "bg-primary-d cursor-default"
 						: "bg-secondary hover:bg-secondary-ll"
@@ -31,8 +31,10 @@ const ProjectButton = ({
 			<a
 				href={href}
 				target='_blank'
-				className={`hidden lg:block lg:absolute z-0 font-bold transition-position duration-500 lg:left-1/2 lg:-translate-x-1/2 p-1 lg:p-2 lg:pb-1 rounded-r-lg lg:rounded-t-lg lg:rounded-b-none border-2 lg:border-b-0 border-gray-dd w-44 text-center ${
-					project === currentProject && href ? "bottom-full " : "bottom-0"
+				className={`hidden sm:block sm:absolute z-0 font-bold transition-position duration-500 sm:left-1/2 sm:-translate-x-1/2 p-1 sm:p-1 lg:p-2 lg:pb-1 rounded-r-lg sm:rounded-t-lg sm:rounded-b-none border-2 sm:border-b-0 border-gray-dd w-44 sm:w-24 lg:w-44 text-center sm:text-xs lg:text-md ${
+					project === currentProject && href
+						? "bottom-full "
+						: "bottom-0 sm:-bottom-2 lg:bottom-0"
 				} ${
 					href
 						? "text-primary bg-quaternary-ll hover:bg-quaternary hover:text-primary-d"
@@ -50,13 +52,14 @@ export default function Projects() {
 	const [linkState, setLinkState] = useState(true);
 
 	return (
-		<section className='bg-gray-ll pt-10'>
+		<section className='bg-gray-ll pt-10 relative'>
+			<div id='projects' className='absolute bg-opacity-0 h-32 -top-10'></div>
 			<h1 className='flex items-center text-md lg:text-4xl font-roboto font-bold text-secondary text-center mb-5 lg:mb-10'>
 				<div className='h-px w-full bg-primary mx-10' />
 				<p>Projects</p>
 				<div className='h-px w-full bg-primary mx-10' />
 			</h1>
-			<div className='flex flex-col lg:flex-row items-center justify-center'>
+			<div className='flex flex-col sm:flex-row items-center justify-center'>
 				<ProjectButton
 					project='1'
 					currentProject={project}
@@ -87,28 +90,8 @@ export default function Projects() {
 					MMO Character Viewer
 				</ProjectButton>
 			</div>
-			<div
-				className={`transition-all duration-500 lg:hidden w-24 mx-auto text-center p-1 font-bold mt-3 rounded-lg border-2 ${
-					linkState
-						? "border-black bg-quaternary-ll text-primary"
-						: "border-black bg-tertiary-l text-secondary"
-				} ${project === "2" && "border-gray bg-gray-l text-gray-d"}`}
-			>
-				{project === "2" ? (
-					<p>Not Public</p>
-				) : (
-					<a
-						href={
-							(project === "1" ? "http://zandart.vercel.app" : "") +
-							(project === "3" ? "http://ffxiv-viewer.vercel.app" : "")
-						}
-					>
-						Visit Now
-					</a>
-				)}
-			</div>
-			<div className='flex flex-col-reverse lg:flex-col mt-5 lg:mt-0'>
-				<div className='mb-10 lg:mb-0 lg:h-32 px-12 text-sm text-justify mt-5'>
+			<div className='flex flex-col-reverse sm:flex-col mt-5 sm:mt-0'>
+				<div className='mb-10 sm:mb-0 sm:h-64 md:h-52 lg:h-40 xl:h-32 px-12 text-sm text-justify mt-5'>
 					{project === "1" && (
 						<p>
 							Zandart is an E-Commerce site for an individual that sells drip
@@ -167,6 +150,25 @@ export default function Projects() {
 							search filters, and optimize the load time of the pages.
 						</p>
 					)}
+
+					<div
+						className={`transition-all duration-500 sm:hidden w-24 mx-auto text-center p-1 font-bold mt-3 rounded-lg border-2 border-black bg-quaternary-ll text-primary ${
+							project === "2" && "border-gray bg-gray-l text-gray-d"
+						}`}
+					>
+						{project === "2" ? (
+							<p>Not Public</p>
+						) : (
+							<a
+								href={
+									(project === "1" ? "http://zandart.vercel.app" : "") +
+									(project === "3" ? "http://ffxiv-viewer.vercel.app" : "")
+								}
+							>
+								Visit Now
+							</a>
+						)}
+					</div>
 				</div>
 				<div>
 					<div className={`${project !== "1" && "hidden"}`}>

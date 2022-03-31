@@ -3,7 +3,7 @@ import React from "react";
 export default function Skills() {
 	const skills = [
 		{ alt: "html logo", src: "/images/htmlLogo.png", w: "100px", h: "100px" },
-		{ alt: "css logo", src: "/images/cssLogo.png", w: "70px", h: "100px" },
+		{ alt: "css logo", src: "/images/cssLogo.png", w: "100px", h: "100px" },
 		{
 			alt: "javascript logo",
 			src: "/images/javascriptLogo.png",
@@ -60,7 +60,8 @@ export default function Skills() {
 		},
 	];
 	return (
-		<section className='mt-10'>
+		<section className='mt-10 relative'>
+			<div id='skills' className='absolute bg-opacity-0 h-32 -top-20'></div>
 			<h1 className='text-md lg:text-4xl text-center flex items-center font-bold text-secondary'>
 				<div className='h-px w-full mx-10 bg-primary' />
 				<p>Skills</p>
@@ -75,9 +76,7 @@ export default function Skills() {
 							width={skill.w}
 							alt={skill.alt}
 							key={skill.alt}
-							className={`last:col-start-2 lg:last:col-start-auto ${
-								skill.alt === "css logo" && "w-3/4 lg:w-1/2"
-							}`}
+							className={`last:col-start-2 lg:last:col-start-auto`}
 						/>
 					);
 				})}

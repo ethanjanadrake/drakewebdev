@@ -5,10 +5,11 @@ import AboutMe from "/components/AboutMe";
 import Contact from "/components/Contact";
 import Projects from "/components/Projects";
 import Skills from "/components/Skills";
+import Navbar from "/components/Navbar";
 
 export default function Home() {
 	return (
-		<div className='relative bg-fixed bg-gradient-to-br from-purple-500 to-pink-200 min-h-screen lg:py-16'>
+		<div className='relative bg-fixed bg-gradient-to-br from-purple-500 to-pink-200 min-h-screen lg:py-16 lg:pt-24'>
 			<Head>
 				<title>Drake Web Dev</title>
 				<link
@@ -48,12 +49,13 @@ export default function Home() {
 				<meta name='author' content='Ethan Jana Drake' />
 				<meta property='og:image' content='/images/socialimage.jpg' />
 			</Head>
-			<main className='lg:max-w-7xl lg:mx-auto bg-white pt-10'>
-				<h1 className='flex justify-center text-4xl xl:text-9xl font-extrabold font-roboto text-primary-d'>
+			<main className='lg:max-w-7xl lg:mx-auto bg-white pt-16'>
+				<Navbar />
+				<h1 className='flex justify-center text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold font-roboto text-primary-d'>
 					<p className='mr-2'>Ethan Jana Drake</p>
 					<GiSpikedDragonHead />
 				</h1>
-				<h2 className='text-xl lg:text-3xl font-bold text-secondary-l text-right mt-2 lg:mt-5 mr-10 lg:mr-32'>
+				<h2 className='text-xl lg:text-3xl font-bold text-secondary-l text-center mt-2 lg:mt-5 ml-32 sm:ml-50 md:ml-60 lg:ml-70 xl:ml-80'>
 					Web Development
 				</h2>
 				<AboutMe />
