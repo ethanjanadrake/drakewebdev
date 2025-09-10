@@ -7,6 +7,19 @@ import Projects from "/components/Projects";
 import Skills from "/components/Skills";
 import Navbar from "/components/Navbar";
 
+/**
+ * Main homepage component for Ethan Drake's portfolio website
+ *
+ * Structure:
+ * - Hero section with name and title
+ * - About Me section with bio and social links
+ * - Projects showcase with interactive carousels
+ * - Skills section with animated carousel
+ * - Contact form
+ *
+ * Styling: Uses custom Tailwind color palette defined in tailwind.config.js
+ * Responsive: Mobile-first design with breakpoints for all screen sizes
+ */
 export default function Home() {
 	return (
 		<div className='relative bg-fixed bg-gradient-to-br from-purple-500 to-pink-200 min-h-screen lg:py-16 lg:pt-24'>
@@ -37,17 +50,22 @@ export default function Home() {
 					rel='stylesheet'
 				/>
 				<meta charset='UTF-8' />
-				<meta property='og:title' content='Drake Web Dev' />
+				<meta property='og:title' content='Drake Web Dev' key='ogtitle' />
 				<meta
 					property='og:description'
 					content='Freelance Web Developer looking for work.'
+					key='ogdesc'
 				/>
 				<meta
 					name='keywords'
 					content='HTML, CSS, JavaScript, React, NextJS, Next, JS, Web, Developer, Development, Frontend'
 				/>
 				<meta name='author' content='Ethan Jana Drake' />
-				<meta property='og:image' content='/images/socialimage.jpg' />
+				<meta
+					property='og:image'
+					content='/images/socialimage.jpg'
+					key='ogimage'
+				/>
 			</Head>
 			<main className='lg:max-w-7xl lg:mx-auto bg-white pt-16'>
 				<Navbar />

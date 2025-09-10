@@ -1,6 +1,19 @@
 import Image from "next/image";
 import Socials from "./Socials";
 
+/**
+ * AboutMe Component
+ *
+ * Personal bio section featuring:
+ * - Professional background and education
+ * - Career transition from teaching to web development
+ * - Technical interests and hobbies
+ * - Current goals and availability
+ * - Social media links via Socials component
+ *
+ * Layout: Two-column on desktop (text + image), single column on mobile
+ * Styling: Custom color scheme with responsive typography
+ */
 export default function AboutMe() {
 	return (
 		<section className='mt-10 lg:grid grid-cols-2 font-roboto text-justify'>
@@ -18,9 +31,8 @@ export default function AboutMe() {
 					/>
 					<p>
 						I am a former high school science teacher who decided to explore Web
-						Development in 2020. I was raised in the Greater Philadelphia area
-						and spent two years as an exchange student in my ancestral homeland
-						of Shanghai, China. My college education includes Mechanical
+						Development in 2020. I was raised in the Greater Philadelphia Area
+						and Shanghai, China. My college education includes Mechanical
 						Engineering, Software Engineering, and Science Education. I moved to
 						the San Francisco Bay Area in 2016 and taught Physics, Chemistry,
 						Programming, and Engineering classes in two schools.

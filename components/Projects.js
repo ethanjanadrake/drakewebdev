@@ -2,6 +2,20 @@ import { useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 
+/**
+ * ProjectButton Component
+ *
+ * Interactive button for project selection with conditional styling
+ * Shows "Visit Now" or "Not Public" based on project availability
+ *
+ * @param {string} children - Button text content
+ * @param {string} project - Project identifier (1, 2, 3)
+ * @param {string} currentProject - Currently selected project
+ * @param {function} setProject - Function to update selected project
+ * @param {function} setLinkState - Function to toggle link state
+ * @param {boolean} linkState - Current link state
+ * @param {string} href - Project URL (optional)
+ */
 const ProjectButton = ({
 	children,
 	project,
@@ -47,6 +61,20 @@ const ProjectButton = ({
 	);
 };
 
+/**
+ * Projects Component
+ *
+ * Interactive project showcase with:
+ * - Three project buttons (Art Web Store, Insurance Projector, MMO Character Viewer)
+ * - Dynamic content display based on selection
+ * - Image carousels using Splide.js for project galleries
+ * - Responsive design with mobile/desktop layouts
+ *
+ * Projects:
+ * 1. Zandart (Art Web Store) - E-commerce site with Firebase/Stripe
+ * 2. Insurance Projector - Business tool for insurance brokers (private)
+ * 3. FFXIV Viewer - MMO character viewer using external API
+ */
 export default function Projects() {
 	const [project, setProject] = useState("1");
 	const [linkState, setLinkState] = useState(true);
