@@ -24,7 +24,7 @@ export default function Home() {
 	return (
 		<div className='relative bg-fixed bg-gradient-to-br from-purple-500 to-pink-200 min-h-screen lg:py-16 lg:pt-24'>
 			<Head>
-				<title>Drake Web Dev</title>
+				<title>Drake Test Change</title>
 				<link
 					rel='apple-touch-icon'
 					sizes='180x180'
