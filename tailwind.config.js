@@ -1,7 +1,9 @@
 module.exports = {
-	mode: "jit",
-	purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-	darkMode: false, // or 'media' or 'class'
+	content: [
+		"./pages/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
+	],
+	darkMode: "media", // or 'class'
 	theme: {
 		extend: {
 			colors: {
@@ -35,9 +37,6 @@ module.exports = {
 		fontFamily: {
 			roboto: ['"Roboto"', "sans-serif"],
 		},
-	},
-	variants: {
-		extend: {},
 	},
 	plugins: [],
 };
