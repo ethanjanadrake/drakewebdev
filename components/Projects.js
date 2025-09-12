@@ -122,7 +122,7 @@ export default function Projects() {
 				<div className='mb-10 sm:mb-0 sm:h-64 md:h-52 lg:h-40 xl:h-32 px-12 text-sm text-justify mt-5'>
 					{project === "1" && (
 						<p>
-							Zandart is an E-Commerce site for an individual that sells drip
+							Zandart is an E-Commerce site for an artist that sells drip
 							paintings. It uses Google Firebase as the backend to handle
 							authentication and communication with the Stripe API. There is an
 							interface for admins to upload art and set and edit details about

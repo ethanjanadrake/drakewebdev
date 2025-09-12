@@ -24,7 +24,7 @@ export default function Home() {
 	return (
 		<div className='relative bg-fixed bg-gradient-to-br from-purple-500 to-pink-200 min-h-screen lg:py-16 lg:pt-24'>
 			<Head>
-				<title>Drake Test Change</title>
+				<title>JJ Drake Dev</title>
 				<link
 					rel='apple-touch-icon'
 					sizes='180x180'
@@ -70,11 +70,11 @@ export default function Home() {
 			<main className='lg:max-w-7xl lg:mx-auto bg-white pt-16'>
 				<Navbar />
 				<h1 className='flex justify-center text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold font-roboto text-primary-d'>
-					<p className='mr-2'>Ethan Jana Drake</p>
+					<p className='mr-2'>JJ Drake</p>
 					<GiSpikedDragonHead />
 				</h1>
 				<h2 className='text-xl lg:text-3xl font-bold text-secondary-l text-center mt-2 lg:mt-5 ml-32 sm:ml-50 md:ml-60 lg:ml-70 xl:ml-80'>
-					Web Development
+					Web Developer
 				</h2>
 				<AboutMe />
 				<Projects />

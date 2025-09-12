@@ -27,7 +27,7 @@ export default function AboutMe() {
 				<div className='text-sm'>
 					<img
 						src='/images/socialimage.jpg'
-						className='float-right w-2/3 pl-5 pb-5 lg:hidden'
+						className='float-right w-1/2 pl-5 pb-5 lg:hidden'
 					/>
 					<p>
 						I am a former high school science teacher who decided to explore Web
@@ -37,19 +37,6 @@ export default function AboutMe() {
 						the San Francisco Bay Area in 2016 and taught Physics, Chemistry,
 						Programming, and Engineering classes in two schools.
 					</p>
-					{/* <p className='mt-5'>
-						Living in the Bay Area led me to immerse myself in the Silicon
-						Valley culture, and as I saw most of my friends working in tech, I
-						started to realize that there was nothing special about them that I
-						didn't also have access to, not to mention I was watching as my
-						students also found great success in their programming projects.
-						That's when the itch to teach myself to code professionally began. I
-						was fortunate to already be involved in a supportive community to
-						learn from, which supplemented the several Udemy classes I studied
-						through. After my primary learning stage, I managed to discover some
-						freelancing opportunities which are outlined in the Projects section
-						of this page.
-					</p> */}
 					<p className='mt-5'>
 						I have always been close to tech. My lifelong hobby of video gaming
 						connected me to modding games and at times I even coded my own mods,
@@ -58,7 +45,7 @@ export default function AboutMe() {
 						not only was I the tech teacher, I also used far more tech than most
 						other teachers and ran seminars to teach other teachers how to use
 						their online tools properly, such as Google Classroom and Infinite
-						Campus. I even ran some hackathons for students to compete in making
+						Campus. I even ran three hackathons for students to compete in making
 						a small video game.
 					</p>
 					<p className='mt-5'>
@@ -75,7 +62,7 @@ export default function AboutMe() {
 			</div>
 			<img
 				src='/images/socialimage.jpg'
-				className='hidden lg:block pr-20 pt-5 mb-10'
+				className='hidden lg:block pr-20 pt-5 mb-10 max-h-max'
 			/>
 		</section>
 	);
